@@ -7,11 +7,11 @@ var paths = {
         // By using styles/**/*.sass we're telling gulp to check --scss/*.scss--  all folders for any sass file
         src: ['scss/*.scss'],
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
-        dest: "src/css"
+        dest: "docs/css"
     },
 	js: {
 		src: ['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js'],
-		dest: "src/js"
+		dest: "docs/js"
 	}
  
     // Easily add additional paths
@@ -47,7 +47,7 @@ function watch() {
     browserSync.init({
         // You can tell browserSync to use this directory and serve it as a mini-server
         server: {
-            baseDir: "./src"
+            baseDir: "./docs"
         }
         // If you are already serving your website locally using something like apache
         // You can use the proxy setting to proxy that instead
@@ -59,7 +59,7 @@ function watch() {
     // This can be html or whatever you're using to develop your website
     // Note -- you can obviously add the path to the Paths object
     //gulp.watch("src/*.html", reload);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("docs/*.html").on('change', browserSync.reload);
 }
 
 // Expose the task by exporting it
