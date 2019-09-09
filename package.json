@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-uglify": "^3.0.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7"
   }
