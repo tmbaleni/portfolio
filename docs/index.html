@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="container">
@@ -40,7 +41,7 @@
                 </nav>
     </header>
    <div class="container">
-       <div class="hero mt-5">
+       <div data-aos="fade-up" class="hero mt-5 pt-4">
            <div class="row">
                <div class="col-lg-6">
                    <div class="hero__text">
@@ -115,7 +116,7 @@
            </div>
        </div>
 
-       <div class="row">
+       <div data-aos="fade-up" class="row">
            <div class="col-md-8">
                <div class="title">
                    The Process
@@ -136,7 +137,7 @@
            </div>
        </div>
        
-       <div class="row">
+       <div data-aos="fade-up" class="row">
             <div class="col-md-6">
                 <h2 class="page-h2">Research</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta exercitationem necessitatibus
@@ -151,7 +152,7 @@
                 </div>
        </div>
 
-       <div class="row">
+       <div data-aos="fade-up" class="row">
             <div class="col-md-6">
                 <h2 class="page-h2">Development</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta exercitationem necessitatibus
@@ -349,5 +350,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({once: true});
+  </script>
 </body>
 </html>
