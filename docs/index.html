@@ -135,7 +135,7 @@
            </div>
        </div>
        
-       <div data-aos="fade-up" class="row">
+       <div data-aos="fade-up" class="row mt-xs-3">
             <div class="col-md-6">
                 <h2 class="page-h2">Research</h2>
                 <p>The first and most critical step is understanding the problem we are trying to solve. 
@@ -204,44 +204,46 @@
        <div data-aos="fade-right" class="row">
             <div class="owl-carousel">
                     <div class="card">
+                        <img src="./img/goal-four-cards.png" alt="John" class="card__img">
                         <a href="#">
-                            <img src="./img/goal-four-cards.png" alt="John" class="card__img">
                             <h4 class="card__title">Goal Four Foundation</h4>
                             <p class="card__sub-title">Case Study</p>  
                         </a>
                     </div>
                     <div class="card">
-                            <img src="./img/alafea-logo-small.png" alt="John" class="card__img">
+                        <img src="./img/alafea-logo-small.png" alt="John" class="card__img">
+                        <a href="#">
                             <h4 class="card__title">Alafea Institute</h4>
                             <p class="card__sub-title">Case Study</p> 
+                        </a>
                     </div>
                     <div  class="card">
-                            <div class="card__container">
-                            <img src="./img/blind-owl.png" alt="John" class="card__img">
-                            </div>
+                        <img src="./img/blind-owl.png" alt="John" class="card__img">
+                        <a href="#">
                             <h4 class="card__title">Blind Owl</h4>
                             <p class="card__sub-title">Case Study</p>
+                        </a>
                     </div>
                     <div  class="card">
-                            <div class="card__container">
                             <img src="./img/dephlex-logo.png" alt="John" class="card__img">
-                            </div>
+                        <a href="#">
                             <h4 class="card__title">Dephlex Creatives</h4>
                             <p class="card__sub-title">Case Study</p>
+                        </a>
                     </div>
                     <div  class="card">
-                            <div class="card__container">
                             <img src="./img/she-is-page.png" alt="John" class="card__img">
-                            </div>
+                        <a href="#">
                             <h4 class="card__title">She is ministries</h4>
                             <p class="card__sub-title">Case Study</p>
+                        </a>
                     </div>
                     <div  class="card">
-                            <div class="card__container">
                             <img src="./img/wode-maya-logo.png" alt="John" class="card__img">
-                            </div>
+                        <a href="#">
                             <h4 class="card__title">Wode Maya</h4>
                             <p class="card__sub-title">Case Study</p>
+                        </a>
                     </div>
                   </div>
        </div>
@@ -250,11 +252,10 @@
            <div class="col-12 text-center mb-5">
                <h2 class="page-h2">Stay Up-to-date</h2>
                <p>Sign up to stay informed about the latest case studies, products and designs.</p>
-               <form action="" class="email-signup-form">
-                   <label for="email">Email</label>
-                   <input type="email" name="email" id="email" placeholder="examle@email.com">
-                   <input type="submit" value="submit" class="btn btn-primary">
-               </form>
+               <div class="email-signup-form">
+                   <input type="email" name="email" id="email" placeholder="examle@email.com"/>
+                   <button type="submit" class="btn btn-primary email-btn">&RightArrow;</button>
+               </div>
            </div>
        </div>
 
@@ -350,7 +351,10 @@
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({once: true});
+    AOS.init({once: true,
+        duration: 600, 
+        easing: 'ease-in-out',
+    });
   </script>
 </body>
 </html>
