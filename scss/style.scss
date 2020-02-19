@@ -436,8 +436,45 @@ $blue1-gradient: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
 }
 .footer{
     margin: 0 auto;
+    &-heading{
+        font-weight: 800;
+        font-size: 38px;
+        color: white;
+    }
 }
 #footer{
     background-color: black;
     color: white;
+}
+/*
+About Page
+*/
+.full-width-img{
+    width: 100%;
+}
+.project-card{
+    transition: all 0.3s ease;
+    margin-bottom: 1.2em;
+    &:hover {
+        cursor: pointer;
+        & > img{
+          transform: translateY(-10px);
+          box-shadow: 5px 10px 10px rgba(75, 72, 160, 0.308);
+          transition: all 0.3s ease;
+        }
+      }
+
+    &-small{
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+        box-shadow: 5px 10px 10px rgba(75, 72, 160, 0.308);
+      }
+    }
+    &__img{
+        width:100%;
+        border-radius: 10px;
+    }
 }
