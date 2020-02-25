@@ -381,20 +381,27 @@ $blue1-gradient: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
     height: 45.6px;
 }
 .case-study-card{
-    
-    border-radius: 10px;
-    & > img {
-        border-radius: 8px;
-        transition: all .3s ease-in;
-    }
-    &> img:hover{
-        box-shadow: 5px 10px 10px rgba(5, 2, 85,0.2);
-        transform: translateY(-10px);
-        cursor: pointer;
-        h2{
-            color: rgb(5, 2, 85);
+    &> a{
+        &:hover {
+            cursor: pointer;
+            & > img{
+              transform: translateY(-10px);
+              box-shadow: 5px 10px 10px rgba(75, 72, 160, 0.308);
+              transition: all 0.3s ease;
+            }
+            h2{
+                color: rgb(5, 2, 85);
+            }
+          }
+        
+        border-radius: 10px;
+        & > img {
+            border-radius: 8px;
+            transition: all .3s ease-in;
         }
     }
+    
+    
 }
 .card{
     box-shadow: 0 1px 2px rgba(0,0,0,.05), 0 10px 20px rgba(0,0,0,.05);
@@ -433,6 +440,63 @@ $blue1-gradient: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
         height: 20px;
         width: 20px; 
     }
+}
+.tech-icon{
+    background: url("../img/icons/icon-sprite.png") no-repeat;
+}
+.js{
+    width: 100px;
+    height: 100px;
+    background-position: -100px 0;
+    display: inline-block;
+}
+.nodejs{
+    width: 100px;
+    height: 100px;
+    background-position: -200px 0;
+    display: inline-block;
+}
+.reactjs{
+    width: 100px;
+    height: 100px;
+    background-position: -300px 0;
+    display: inline-block;
+}
+.mongo{
+    width: 200px;
+    height: 100px;
+    background-position: -400px -100px;
+    display: inline-block; 
+}
+.react-native{
+    width: 200px;
+    height: 60px;
+    background-position: -101px -100px;
+    display: inline-block;
+}
+.python{
+    width: 100px;
+    height: 99px;
+    background-position: 0px 0px;
+    display: inline-block;
+}
+.django{
+    width: 100px;
+    height: 100px;
+    background-position: 0px -100px;
+    display: inline-block;
+}
+.express{
+    width: 200px;
+    height: 50px;
+    background-position: -400px 0px;
+    display: inline-block;
+}
+.node{
+    width: 100px;
+    height: 100px;
+    background-position: 0px -100px;
+    display: inline-block;
 }
 .footer{
     margin: 0 auto;
