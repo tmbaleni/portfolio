@@ -33,7 +33,7 @@ a {
     background-color: #efefef;
 }
 
-$blue1-gradient: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
+$blue1-gradient: linear-gradient(to bottom right,#185a19,#28a745);
 
 
 .profile--icon{
@@ -389,7 +389,7 @@ $blue1-gradient: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
             & > img{
               transform: translateY(-10px);
               box-shadow: 3px 10px 7px rgba(152, 153, 153, 0.308);
-              transition: all 0.3s ease;
+              transition: all 0.3s ease-in-out;
             }
             h2{
                 color: #007bff;
@@ -399,7 +399,7 @@ $blue1-gradient: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
         border-radius: 10px;
         & > img {
             border-radius: 8px;
-            transition: all .3s ease-in;
+            transition: all .3s ease-in-out;
         }
     }
     
@@ -537,6 +537,7 @@ About Page
     &-small{
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    max-height: 250px;
     &:hover {
         cursor: pointer;
         transform: translateY(-10px);
