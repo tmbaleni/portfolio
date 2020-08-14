@@ -1,5 +1,7 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
@@ -386,11 +388,11 @@ $blue1-gradient: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
             cursor: pointer;
             & > img{
               transform: translateY(-10px);
-              box-shadow: 5px 10px 10px rgba(75, 72, 160, 0.308);
+              box-shadow: 3px 10px 7px rgba(152, 153, 153, 0.308);
               transition: all 0.3s ease;
             }
             h2{
-                color: rgb(5, 2, 85);
+                color: #007bff;
             }
           }
         
@@ -517,20 +519,24 @@ About Page
     width: 100%;
 }
 .project-card{
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     margin-bottom: 1.2em;
     &:hover {
         cursor: pointer;
-        & > img{
+        & > a > img{
           transform: translateY(-10px);
           box-shadow: 5px 10px 10px rgba(75, 72, 160, 0.308);
-          transition: all 0.3s ease;
+          transition: all 0.3s ease-in-out;
+        }
+        & > a > h4 {
+            color: #007bff; 
+            transition: all 0.3s ease-in-out;
         }
       }
 
     &-small{
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
     &:hover {
         cursor: pointer;
         transform: translateY(-10px);
